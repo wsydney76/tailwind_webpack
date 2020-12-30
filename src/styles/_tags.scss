@@ -1,0 +1,21 @@
+h2, h3, h4
+{
+  @apply mb-block font-serif;
+}
+
+h2 {
+  @apply text-3xl;
+}
+
+h3 {
+  @apply text-2xl;
+}
+
+h4 {
+  @apply text-xl;
+}
+
+a {
+  @apply hover:underline hover:text-gray-500 dark:hover:text-dark-200 focus-ring;
+}
+

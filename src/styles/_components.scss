@@ -1,0 +1,99 @@
+.rich-text {
+
+  p {
+    @apply leading-relaxed my-4;
+
+    img {
+      @apply block mx-auto;
+    }
+  }
+
+  a {
+    @apply underline;
+  }
+
+  ul, ol {
+    @apply pl-6;
+  }
+
+  ul {
+    list-style: disc;
+  }
+}
+
+.btn {
+  @apply
+  px-4 py-2 no-underline transition-colors rounded
+  hover:no-underline
+  focus:outline-none focus:ring focus:ring-outline
+}
+
+.btn-primary {
+  @apply
+  bg-primary text-white
+  hover:bg-primary-dark hover:text-white
+  focus:bg-primary-dark
+  dark:bg-dark-500 dark:hover:bg-dark-700;
+}
+
+.btn-secondary {
+  @apply
+  bg-secondary text-white
+  hover:bg-secondary-dark hover:text-white
+  focus:bg-secondary-dark;
+}
+
+.btn-white {
+  @apply
+  bg-white text-black border border-gray-300 shadow-lg
+  hover:bg-alt hover:text-black
+  focus:bg-alt
+  dark:bg-dark-800 dark:hover:bg-dark-700 dark:text-white;
+}
+
+.btn-small {
+  @apply text-sm bg-white px-1 border border-gray-500
+  hover:bg-gray-200 hover:text-black transition hover:no-underline
+  dark:bg-gray-700 dark:hover:bg-gray-300 dark:hover:text-black
+  focus:outline-none focus:ring focus:ring-outline;
+}
+
+.table td {
+  @apply p-2 align-top;
+}
+
+.property-table {
+  th {
+    @apply text-left pr-4 pb-1 align-top font-bold;
+    &:after {
+      content: ':';
+    }
+  }
+
+  td {
+    @apply pb-1 align-top;
+  }
+}
+
+.cards {
+  @apply sm:flex sm:flex-wrap;
+  > * {
+    @apply sm:mr-normal mb-normal;
+  }
+}
+
+.pagination {
+  @apply flex flex-wrap border-l border-primary dark:border-gray-50;
+
+  .pagination-link {
+    @apply
+    w-10 h-10 flex items-center justify-center bg-white text-sm font-bold leading-tight border-t border-b border-r border-primary rounded-none
+    hover:bg-primary hover:text-white hover:no-underline
+    focus:ring-0
+    dark:bg-gray-500 dark:text-white dark:hover:bg-primary dark:border-gray-50 ;
+  }
+
+  .pagination-active {
+    @apply bg-primary text-white dark:bg-primary dark:text-gray-50;
+  }
+}
